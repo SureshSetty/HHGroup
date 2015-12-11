@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width" />
     <title>HH Group</title>
     <link href="~/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/css/hhgroup.css" rel="stylesheet" />
+    <link href="~/Content/css/hhgroup.css" rel="stylesheet" />  
 
     <script src="~/Content/angularjs/angular.js"></script>
     <script src="~/Content/angularjs/angular-route.js"></script>
@@ -14,55 +14,60 @@
 </head>
 <body>
     <div xmlns:ng="http://angularjs.org" id="ng-app" ng-app="hhgroup">
+        <!-- Navigation -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">HH Group</a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#/home">Home</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Hot Air Sealing Machine</a></li>
+                                <li><a href="#">Hot Air Sealing Machine</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li class="dropdown-header">Flat Press Machines</li>
+                                <li><a href="#">Pneumatic Flat Press Machine</a></li>
+                                <li><a href="#">Pneumatic Curve Press Machine</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Sewfree Tape Laydown + Trimmer</a></li>
+                                <li><a href="#">Hydrostatic Tester</a></li>
+                                <li><a href="#">Sewfree Ultrasonic Multi-Purpose Welder</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#/about">About</a>
+                        </li>
+                        <li>
+                            <a href="#/contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+        </nav>
        
-            <!-- Static navbar -->
-            <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="true" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="#">HH Group</a>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse in" aria-expanded="true">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="caret"></span></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Hot Air Sealing Machine</a></li>
-                                    <li><a href="#">Hot Air Sealing Machine</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li class="dropdown-header">Flat Press Machines</li>
-                                    <li><a href="#">Pneumatic Flat Press Machine</a></li>
-                                    <li><a href="#">Pneumatic Curve Press Machine</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#">Sewfree Tape Laydown + Trimmer</a></li>
-                                    <li><a href="#">Hydrostatic Tester</a></li>
-                                    <li><a href="#">Sewfree Ultrasonic Multi-Purpose Welder</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                            
-                        </ul>
-                       
-                    </div><!--/.nav-collapse -->
-                </div><!--/.container-fluid -->
-            </nav>
-
-           
-            @RenderBody()
-        </div>
-       
-    <footer class="footer">
-        <div class="container">
-            <p class="text-muted">Place sticky footer content here.</p>
-        </div>
-    </footer>
+        @RenderBody()
+        <footer class="footer">
+            <div class="container">
+                <p class="text-muted">Place sticky footer content here.</p>
+            </div>
+        </footer>
+    </div>
     <script src="~/Content/jquery/jquery-2.1.4.min.js"></script>
     <script src="~/Content/bootstrap/js/bootstrap.min.js"></script>
 </body>

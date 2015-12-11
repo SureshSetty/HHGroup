@@ -188,9 +188,14 @@
     <Content Include="Content\bootstrap\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap\js\npm.js" />
     <Content Include="Content\css\hhgroup.css" />
+    <Content Include="Content\images\blue.jpg" />
+    <Content Include="Content\images\green.jpg" />
+    <Content Include="Content\images\purple.jpg" />
     <Content Include="Content\jquery\jquery-2.1.4.min.js" />
     <Content Include="Content\scripts\hhgroup-app.js" />
     <Content Include="Content\scripts\controllers\home-controller.js" />
+    <Content Include="Content\views\about.html" />
+    <Content Include="Content\views\contact.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\angularjs\angular-animate.min.js.map" />
