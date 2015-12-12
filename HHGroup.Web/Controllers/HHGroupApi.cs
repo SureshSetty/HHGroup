@@ -12,63 +12,63 @@ using System.Net.Http.Formatting;
 
 namespace HHGroup.Web.Controllers
 {
-    public class HHGroupApi : ApiController
+    public class HHGroupApiController : ApiController
     {
-        DatabaseProvider dbProvider = default(DatabaseProvider);
+        //DatabaseProvider dbProvider = default(DatabaseProvider);
 
-        public HHGroupApi()
-        {
-            dbProvider = new DataProviders.DatabaseProvider();
-        }
+        //public HHGroupApiController()
+        //{
+        //    dbProvider = new DataProviders.DatabaseProvider();
+        //}
 
-        public HHGroupApi(DatabaseProvider provider)
-        {
-            dbProvider = provider;
-        }
+        //public HHGroupApiController(DatabaseProvider provider)
+        //{
+        //    dbProvider = provider;
+        //}
 
 
-        [HttpGet]
-        public HttpResponseMessage GetCMSData(string countryID, string pageName)
-        {
-            var response = default(object);
-            HttpStatusCode httpStatusCode = HttpStatusCode.OK;
+        //[HttpGet]
+        //public HttpResponseMessage GetCMSData(string countryID, string pageName)
+        //{
+        //    var response = default(object);
+        //    HttpStatusCode httpStatusCode = HttpStatusCode.OK;
 
-            DataTable dataTable = dbProvider.GetCMSData(countryID, pageName);
+        //    DataTable dataTable = dbProvider.GetCMSData(countryID, pageName);
             
-            response = new
-            {
-                CMSModel = GetCMSList(dataTable)
-            };
+        //    response = new
+        //    {
+        //        CMSModel = GetCMSList(dataTable)
+        //    };
 
-            HttpRequestMessage requestMessage = (Request != null) ? Request : new HttpRequestMessage();
-            return requestMessage.CreateResponse<object>(httpStatusCode, response, new JsonMediaTypeFormatter(), "application/json");
-        }
+        //    HttpRequestMessage requestMessage = (Request != null) ? Request : new HttpRequestMessage();
+        //    return requestMessage.CreateResponse<object>(httpStatusCode, response, new JsonMediaTypeFormatter(), "application/json");
+        //}
 
-        #region PRIVATE METHODS
+        //#region PRIVATE METHODS
 
-        public List<CMSModel> GetCMSList(DataTable dataTable)
-        {
-            List<CMSModel> cmsModelList = new List<CMSModel>();
-            CMSModel cmsModel = default(CMSModel);
+        //public List<CMSModel> GetCMSList(DataTable dataTable)
+        //{
+        //    List<CMSModel> cmsModelList = new List<CMSModel>();
+        //    CMSModel cmsModel = default(CMSModel);
 
-            if(dataTable != null && dataTable.Rows != null && dataTable.Rows.Count > 0)
-            {
-                foreach(DataRow dr in dataTable.Rows)
-                {
-                    cmsModel = new CMSModel();
-                    cmsModel.CMSKey = Convert.ToString(dr["CMSKey"]);
-                    cmsModel.CMSValue = Convert.ToString(dr["CMSValue"]);
-                    cmsModel.CMSValue = Convert.ToString(dr["CMSType"]);
-                    cmsModel.CMSValue = Convert.ToString(dr["CMSSrc"]);
-                    cmsModel.CMSValue = Convert.ToString(dr["CMSHref"]);
+        //    if(dataTable != null && dataTable.Rows != null && dataTable.Rows.Count > 0)
+        //    {
+        //        foreach(DataRow dr in dataTable.Rows)
+        //        {
+        //            cmsModel = new CMSModel();
+        //            cmsModel.CMSKey = Convert.ToString(dr["CMSKey"]);
+        //            cmsModel.CMSValue = Convert.ToString(dr["CMSValue"]);
+        //            cmsModel.CMSType = Convert.ToString(dr["CMSType"]);
+        //            cmsModel.CMSSrc = Convert.ToString(dr["CMSSrc"]);
+        //            cmsModel.CMSHref = Convert.ToString(dr["CMSHref"]);
                     
-                    cmsModelList.Add(cmsModel);
-                }
-            }
+        //            cmsModelList.Add(cmsModel);
+        //        }
+        //    }
 
-            return cmsModelList;
-        }
+        //    return cmsModelList;
+        //}
 
-        #endregion
+        //#endregion
     }
 }
