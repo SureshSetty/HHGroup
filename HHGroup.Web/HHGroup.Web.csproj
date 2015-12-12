@@ -150,6 +150,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CMSModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -192,6 +193,7 @@
     <Content Include="Content\images\green.jpg" />
     <Content Include="Content\images\purple.jpg" />
     <Content Include="Content\jquery\jquery-2.1.4.min.js" />
+    <Content Include="Content\scripts\services\hhgroup-service.js" />
     <Content Include="Content\scripts\hhgroup-app.js" />
     <Content Include="Content\scripts\controllers\home-controller.js" />
     <Content Include="Content\views\about.html" />
@@ -246,7 +248,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

@@ -12,9 +12,6 @@ namespace HHGroup.Web.Controllers
     {
         public ActionResult Index()
         {
-            DatabaseProvider provider = new DatabaseProvider();
-            DataTable dataTable = provider.GetCountry();
-
             return View();
         }
     }
