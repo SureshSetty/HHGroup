@@ -5,15 +5,25 @@
     //    $scope.CMSModel = response;
     //});
 
-    var countryID = 1
-    var pageName = "";
-    $http.get("/home/getcmsdata?countryID=" + countryID + "&pageName=" + pageName)
-        .success(function (data, status, headers, config)
-        {
-            $rootScope.CMSModel = data;
-        })
-        .error(function (data, status, header, config)
-        {
+    var pageName = 'Home';
+    var countryId = 1;
+    var request = {
+        CountryId: countryId,
+        PageName: pageName
+    }
+    HHGroupService.GetCMSData('/home/getcmsdata', request).then(function (response) {
+        $rootScope.CMSModel = response;
+    });
+
+    //var countryID = 1
+    //var pageName = "";
+    //$http.get("/home/getcmsdata?countryID=" + countryID + "&pageName=" + pageName)
+    //    .success(function (data, status, headers, config)
+    //    {
+    //        $rootScope.CMSModel = data;
+    //    })
+    //    .error(function (data, status, header, config)
+    //    {
             
-        });
+    //    });
 }]);

@@ -3,6 +3,7 @@ C:\Projects\HHGroup\HHGroup.Web\bin\HHGroup.Web.dll
 C:\Projects\HHGroup\HHGroup.Web\bin\HHGroup.Web.pdb
 C:\Projects\HHGroup\HHGroup.Web\bin\Antlr3.Runtime.dll
 C:\Projects\HHGroup\HHGroup.Web\bin\EntityFramework.dll
+C:\Projects\HHGroup\HHGroup.Web\bin\HHGroup.DataProviders.dll
 C:\Projects\HHGroup\HHGroup.Web\bin\Microsoft.Data.Edm.dll
 C:\Projects\HHGroup\HHGroup.Web\bin\Microsoft.Data.OData.dll
 C:\Projects\HHGroup\HHGroup.Web\bin\Microsoft.Web.Infrastructure.dll
@@ -23,6 +24,8 @@ C:\Projects\HHGroup\HHGroup.Web\bin\System.Web.WebPages.Deployment.dll
 C:\Projects\HHGroup\HHGroup.Web\bin\System.Web.WebPages.dll
 C:\Projects\HHGroup\HHGroup.Web\bin\System.Web.WebPages.Razor.dll
 C:\Projects\HHGroup\HHGroup.Web\bin\WebGrease.dll
+C:\Projects\HHGroup\HHGroup.Web\bin\MySql.Data.dll
+C:\Projects\HHGroup\HHGroup.Web\bin\HHGroup.DataProviders.pdb
 C:\Projects\HHGroup\HHGroup.Web\bin\EntityFramework.xml
 C:\Projects\HHGroup\HHGroup.Web\bin\Newtonsoft.Json.xml
 C:\Projects\HHGroup\HHGroup.Web\bin\System.Net.Http.Formatting.xml

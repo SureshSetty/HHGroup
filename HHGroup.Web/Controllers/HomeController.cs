@@ -12,15 +12,27 @@ namespace HHGroup.Web.Controllers
 {
     public class HomeController : Controller
     {
+
+        /// <summary>
+        /// Load Index Page
+        /// </summary>
+        /// <returns></returns>
         public ActionResult Index()
         {
             return View();
-        }
+        }       
 
-        public JsonResult GetCMSData(string countryID, string pageName)
+        /// <summary>
+        /// Get CMS Data
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
+        [HttpPost]
+        public JsonResult GetCMSData(RequestModel request)
         {
+
             DatabaseProvider dbProvider = new DatabaseProvider();
-            DataTable dataTable = dbProvider.GetCMSData(countryID, pageName);
+            DataTable dataTable = dbProvider.GetCMSData(request.CountryId, string.Empty);
             return Json(GetCMSList(dataTable), JsonRequestBehavior.AllowGet);
         }
 
@@ -35,11 +47,11 @@ namespace HHGroup.Web.Controllers
                 foreach (DataRow dr in dataTable.Rows)
                 {
                     cmsModel = new CMSModel();
-                    cmsModel.CMSKey = Convert.ToString(dr["CMSKey"]);
-                    cmsModel.CMSValue = Convert.ToString(dr["CMSValue"]);
-                    cmsModel.CMSType = Convert.ToString(dr["CMSType"]);
-                    cmsModel.CMSSrc = Convert.ToString(dr["CMSSrc"]);
-                    cmsModel.CMSHref = Convert.ToString(dr["CMSHref"]);
+                    cmsModel.Key = Convert.ToString(dr["CMSKey"]);
+                    cmsModel.Value = Convert.ToString(dr["CMSValue"]);
+                    cmsModel.Type = Convert.ToString(dr["CMSType"]);
+                    cmsModel.Src = Convert.ToString(dr["CMSSrc"]);
+                    cmsModel.Href = Convert.ToString(dr["CMSHref"]);
 
                     cmsModelList.Add(Convert.ToString(dr["CMSKey"]), cmsModel);
                 }

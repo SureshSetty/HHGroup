@@ -7,10 +7,10 @@ namespace HHGroup.Web.Models
 {
     public class CMSModel
     {
-        public string CMSKey { get; set; }
-        public string CMSValue { get; set; }
-        public string CMSType { get; set; }
-        public string CMSSrc { get; set; }
-        public string CMSHref { get; set; }
+        public string Key { get; set; }
+        public string Value { get; set; }
+        public string Type { get; set; }
+        public string Src { get; set; }
+        public string Href { get; set; }
     }
 }

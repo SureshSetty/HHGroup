@@ -151,6 +151,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\CMSModel.cs" />
+    <Compile Include="Models\RequestModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -175,8 +176,6 @@
     <Content Include="Content\angularjs\angular-sanitize.js" />
     <Content Include="Content\angularjs\angular-sanitize.min.js" />
     <Content Include="Content\angularjs\angular-scenario.js" />
-    <Content Include="Content\angularjs\angular-touch.js" />
-    <Content Include="Content\angularjs\angular-touch.min.js" />
     <Content Include="Content\angularjs\angular.js" />
     <Content Include="Content\angularjs\angular.min.js" />
     <Content Include="Content\angularjs\version.txt" />
@@ -209,7 +208,6 @@
     <Content Include="Content\angularjs\angular-resource.min.js.map" />
     <Content Include="Content\angularjs\angular-route.min.js.map" />
     <Content Include="Content\angularjs\angular-sanitize.min.js.map" />
-    <Content Include="Content\angularjs\angular-touch.min.js.map" />
     <Content Include="Content\angularjs\angular.min.js.map" />
     <Content Include="Content\angularjs\errors.json" />
     <Content Include="Content\angularjs\version.json" />
