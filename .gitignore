@@ -5,3 +5,6 @@ HHGroup.DataProviders/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8
 HHGroup.Web/obj/Debug/DesignTimeResolveAssemblyReferencesInput.cache
 *.txt
 HHGroup.Web/obj/Debug/HHGroup.Web.csprojResolveAssemblyReference.cache
+HHGroup.DataProviders/bin/Debug/HHGroup.DataProviders.dll
+HHGroup.v12.suo
+Design/~$hhgroup_database_design.xlsx
